@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armeabi-v7a x86
+description: alipay_android
+author: liumingxing
+license: Specify your license
+copyright: Copyright (c) 2015 by Your Company
+
+# these should not be edited
+name: alipay_android
+moduleid: com.mamashai.alipay
+guid: cfad4c1b-53f0-436c-9b96-3b0f62e589d9
+platform: android
+minsdk: 3.1.4

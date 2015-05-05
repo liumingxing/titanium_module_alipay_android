@@ -1,0 +1,18 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name AlipayAndroidBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "com.mamashai.alipay.AlipayAndroidModule.h"
+#include "com.mamashai.alipay.ExampleProxy.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+com.mamashai.alipay.AlipayAndroidModule, ::com::mamashai::alipay::AlipayAndroidModule::bindProxy, ::com::mamashai::alipay::AlipayAndroidModule::dispose
+com.mamashai.alipay.ExampleProxy, ::com::mamashai::alipay::alipayandroid::ExampleProxy::bindProxy, ::com::mamashai::alipay::alipayandroid::ExampleProxy::dispose
+%%
